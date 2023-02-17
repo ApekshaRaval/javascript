@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 2</title>
+</head>
+
+<body>
+    <p> Sum of the number in a string is : <span id="demo"></span></p>
+    <p>  Sum of the number in a string is : <span id="demo1"></span></p>
+    <script>
+
+        //  TASK 1:------- Need to create JavaScript functions for a sum of numbers in string (Example like
+        // “foo8bar8cat2tc2”)
+
+        //  let string = "foo8bar8cat2tc262”"
+        //  let  number= string.match(/[0-9]+/g);
+        //  let  sum=0;
+        //  for(let x of number){
+        //      sum+=Number(x);
+        //  }
+        //  document.getElementById('demo').innerHTML =sum;
+
+
+        //using for of loop
+        //  let string = "foo8bar8cat2tc2”"
+        //  let  number= string.match(/\d+/g);
+        //  let  sum=0;
+        //  for(let x of number){
+        //      sum+=Number(x);
+        //  }
+        //  document.getElementById('demo').innerHTML=sum;
+
+        // using function
+        let string = "foo8bar8cat2tc2”"
+        let sum = 0;
+        const sumOfNumber = (x) => {
+            let number = x.match(/\d+/g);
+            for (let x of number) {
+                sum += Number(x);
+            }
+            return sum;
+        }
+        let ans = sumOfNumber(string);
+        document.getElementById('demo').innerHTML = ans;
+
+
+        // TASK 2 :---- Need to create a Javascript function for the sum of string (Example like "1.5, 2.3, 3.1, 4, 5.5, 6, 7, 8, 9, 10.9")
+    
+        
+        let string1 = "1.5, 2.3, 3.1, 4, 5.5, 6, 7, 8, 9, 10.9";
+    
+        const sumOfString = (x) => {
+            let number = x.split(",");
+            let sum1 = 0;
+            for (let y of number) {
+                sum1 +=Number(y);
+            }
+            return sum1;
+        }
+        let ansOfString = sumOfString (string1);
+        document.getElementById('demo1').innerHTML = ansOfString;
+    </script>
+
+</body>
+
+</html>

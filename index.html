@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apeksha</title>
+    <!-- <script src="./index.js" defer></script> -->
+</head>
+
+<body>
+    <h2>Hello Apeksha</h2>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <!-- <button type="button" onclick="document.getElementById('demo').innerHTML=Date()";>Date()</button> -->
+    <script type="module">
+
+        // import external modules 
+        //    import message  from "./indx.js";
+
+
+        // use of the class with constructor
+        // document.getElementById('demo').innerHTML=mycar.name +"     "+mycar.year  ;
+        // document.getElementById('demo1').innerHTML= "My car is " +mycar.age() +"years old."
+
+        // let text = "hello";
+        // for(let i=0;i<text.length;i++){
+        //     text[i] + " ";
+        // }
+        // document.getElementById('demo').innerHTML=text;
+
+        //  Loops 
+        // for loop
+        //     let n = prompt("enter a number:");
+        //     n= Number.parseInt(n);
+        //     let sum=0;
+        //     for(let i=0;i<n;i++){
+        //         sum+=(i+1);
+        //     }
+        //  document.getElementById('demo').innerHTML=sum;
+
+        //  for in loop\
+        // const car = {type:"Fiat", model:"500", color:"white"};
+        // for(let a in car){
+        //     // console.log(a);
+        //     document.getElementById('demo').innerHTML=a;
+
+        // }
+        // for(let b of 'Appu'){
+        //     console.log(b);
+
+
+
+        // function xyz(a,b){
+        //     return a.includes(b) ? b+a : a+b;
+        // }
+        // document.getElementById('demo').innerHTML=xyz("lips","s");
+
+        // function xyz(a){
+        //     return a%2==0;
+        // }
+        // document.getElementById('demo').innerHTML=xyz(5);
+//         function char_count(str, letter) 
+// {
+//  var letter_Count = 0;
+//  for (var position = 0; position < str.length; position++) 
+//  {
+//     if (str.charAt(position) == letter) 
+//       {
+//       letter_Count += 1;
+//       }
+//   }
+//   return letter_Count;
+// }
+
+// console.log(char_count('w3resource.com', 'o'));
+function myFunction(a, b) {
+  return b.split(a).length - 1
+}
+console.log(myFunction('o',"w3resource.com"));
+  
+
+    </script>
+</body>
+
+</html>

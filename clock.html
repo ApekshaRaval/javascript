@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clock</title>
+</head>
+<body>
+ 
+        <p id="demo"></p>
+        <!-- <p id="demo1"></p>
+        <p id="demo2"></p>
+        <p id="demo3"></p>
+        <p id="demo4"></p>
+        <p id="demo5"></p> -->
+   
+    <script>
+        setInterval(myfunction,1000);
+        function myfunction() {
+            let d = new Date();
+            document.getElementById('demo').innerHTML=d.toLocaleTimeString();
+            // document.getElementById('demo').innerHTML=d.getHours() + ":" +d.getMinutes() +":" + d.getSeconds();
+        }
+        // document.getElementById('demo').innerHTML = window.location.hostname;
+        // document.getElementById('demo1').innerHTML = window.location.href;
+        // document.getElementById('demo2').innerHTML = window.location.pathname;
+        // document.getElementById('demo3').innerHTML = window.location.protocol;
+        // document.getElementById('demo4').innerHTML = window.location.port;
+        // document.getElementById('demo5').innerHTML = window.location.assign;
+    </script>
+</body>
+</html>
